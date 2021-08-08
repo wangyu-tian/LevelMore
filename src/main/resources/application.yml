@@ -1,0 +1,19 @@
+#redis-cli -h 120.53.18.161 -p 6379
+
+server:
+  port: 8088
+
+spring:
+  .redis:
+    host: 120.53.18.161
+    port: 6379
+    database: 8
+    password: 12345687
+    #    sentinel:
+    #      master: mymaster
+    #      nodes: 120.53.18.161:6379
+    pool.max-active: 8
+    pool.max-wait: -1
+    pool.max-idle: 8
+    pool.min-idle: 0
+    timeout: 3000
